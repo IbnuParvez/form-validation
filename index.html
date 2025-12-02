@@ -22,38 +22,43 @@
     <p>You <i>know</i> you want to!!!</p>
   </div>
 
-  <div class="form">
-    <h1>Let's do this</h1>
-    <form action="#" method="POST">
-      <fieldset>
-        <div class="form-row">
-          <label for="first_name">First Name</label>
-          <input type="text" placeholder="First Name..." id="first_name" name="first_name" required>
+  <div class="form-container">
+      <form action="#" method="post" class="form-box">
 
-          <label for="last_name">Last Name</label>
-          <input type="text" placeholder="Last Name..." id="last_name" name="last_name" required>
+        <h3>Let's do this!</h3>
+
+        <div class="grid">
+          <div>
+            <label>FIRST NAME*</label>
+            <input type="text" name="firstName" id="firstName" >
+          </div>
+
+          <div>
+            <label>LAST NAME</label>
+            <input type="text" name="lastName" id="lastName">
+          </div>
+
+          <div>
+            <label>EMAIL*</label>
+            <input type="email" name="email" id="email">
+          </div>
+
+          <div>
+            <label>PHONE NUMBER(optional)</label>
+            <input type="tel">
+          </div>
+
+          <div>
+            <label>PASSWORD*</label>
+            <input type="password" name="password" id="password">
+          </div>
+
+          <div>
+            <label>CONFIRM PASSWORD*</label>
+            <input type="password" name="confirmPassword" id="confirmPassword">
+          </div>
         </div>
-
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input type="email" placeholder="Email..." id="email" name="email" required>
-
-          <label for="phone_number">Phone Number</label>
-          <input type="tel" placeholder="0789..." id="phone_number" name="phone_number" required>
-        </div>
-
-        <div class="form-row">
-          <label for="password">Password</label>
-          <input type="password" placeholder="Password..." id="password" name="password" minlength="6" maxlength="32" required>
-
-          <label for="confirmation">Confirm Your Password</label>
-          <input type="password" placeholder="Confirm password..." id="confirmation" name="confirmation" minlength="6" maxlength="32" required>
-        </div>
-
-      </fieldset>
-    </form>
-  </div>
-
+    </div>
   <div class="sign-up">
     <button type="submit" form="myForm">Create Account</button>
     <p>Already have an account? <a href="#">Log in</a></p>
