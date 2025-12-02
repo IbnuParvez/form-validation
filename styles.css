@@ -35,56 +35,68 @@ body {
 
 .left {
   display: flex;
-  position: relative;
   flex-direction: column;
+  justify-content: center;
+
+  position: relative;
   height: 100vh;
   width: 60%;
+
   background-color: rgb(226, 216, 216);
-  justify-content: center;
-  gap: 2rem;
   padding-bottom: 173px;
+  gap: 2rem;
+
   box-shadow: -10px 0px 10px -10px black;
 }
 
+/* --- ADS SECTION --- */
 .Ads {
   padding: 120px 40px 20px 30px;
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
 }
 
+/* --- FORM BOX --- */
 .form {
   display: flex;
   flex-direction: column;
-  background-color: var(--white);
-  box-shadow: 5px 7px 25px -19px black;
-  padding: 20px 38px;
-  height: 300px;display: flex;
-  flex-direction: column;
-  background-color: var(--white);
-  box-shadow: 5px 7px 25px -19px black;
-  padding: 20px 38px;
   height: 300px;
+  background-color: #fff; /* White background for the form area */
+  padding: 60px 80px; /* Padding inside the form area */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: #2c2c2c;
 }
 
-.sign-up p{
+
+/* --- SIGN UP TEXT --- */
+.sign-up p {
   padding: 0px 20px 8px 20px;
   margin-left: 10px;
 }
 
+/* --- BUTTON STYLING --- */
 button {
   background-color: #596D48;
-  border-radius: 10px;
-  border-color: solid white;
-  padding: 8px 20px 8px 20px;
   color: white;
+  padding: 8px 20px;
+
   width: 10.2em;
   margin: 30px;
+
+  border: none;             /* fixed: border-color: solid white (invalid) */
+  border-radius: 10px;
+  cursor: pointer;
 }
 
+button:hover {
+  opacity: 0.9;
+}
+
+/* --- LINKS --- */
 a {
-  text-decoration: none;
+  color: #508D4E;
   font-weight: bold;
-  color: #508D4E;;
+  text-decoration: none;
 }
 
 a:hover {
