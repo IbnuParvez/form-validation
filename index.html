@@ -3,9 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="odin-lined.png">
 </head>
 <body>
-  
+<div class="right">
+<h1><img src="odin-lined.png" alt="Norse">ODIN</h1>
+</div>
+
+<div class="left">
+<div>
+<p>This is not a real online service!. You know you need something like this in your life to make you realise your deepest dreams. Sign up now to get started!</p><br>
+<p>You know you want to</p>
+</div>
+<div class="form">
+<form action="#" method="POST">
+<fieldset>
+  <legend>Let's do this</legend>
+<label for="first_name">First Name</label>
+<input type="text" placeholder="First Name..." id="first_name" minlength="0" required>
+<label for="last_name">Last Name</label>
+<input type="text" placeholder="Last Name..." id="last_name" minlength="0" required>
+<label for="email">Email</label>
+<input type="email" placeholder="Email..." id="email" minlength="0" required>
+<label for="phone_number">Phone Number</label>
+<input type="number" placeholder="0789..." id="phone_number" minlength="0" required>
+<label for="password">Password</label>
+<input type="password" placeholder="Password..." id="password" minlength="0" maxlength="10" required>
+<label for="first_name">Confirm Your Password</label>
+<input type="password" placeholder="Confirm Yo!..." id="confirmation" minlength="0" maxlength="10" required>
+</fieldset>
+</form>
+</div>
+
+<div class="sign-up">
+<button>Create Account</button>
+<p>Already have an account?<a href="#">Log in</a></p>
+</div>
+</div>
 </body>
 </html>
