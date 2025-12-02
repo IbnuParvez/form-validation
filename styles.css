@@ -1,9 +1,43 @@
+@import url("https://db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse+Bold");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .right {
+  position: relative;
   background-image: url('ocean.jpg');
   background-size: cover;
+  width: 40%;
   height: 100vh;
+}
+
+.logo div {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  background: black;
+  opacity: 0.3;
+  color: white;
+  top: 8rem;
+  text-align: center;
+  font-size: 4em;
+  font-family: "Norse Bold";
+  justify-content: center;
+}
+
+
+button {
+  background-color: #596D48;
+  border-radius: 15px;
+  border-color: white;
+  padding: 20px;
+  color: white;
 }
